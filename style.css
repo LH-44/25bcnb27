@@ -1,0 +1,75 @@
+:root {
+    --bg-dark: #15151e;
+    --card-bg: #1f1f27;
+    --text-light: #ffffff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #e10600; /* F1 Red */
+    padding-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    border-left: 8px solid var(--team-color);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.team-badge {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--team-color);
+    margin-bottom: 10px;
+}
+
+.number {
+    float: right;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.achievements ul {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.view-btn {
+    background: var(--team-color);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
